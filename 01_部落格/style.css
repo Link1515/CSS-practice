@@ -1,0 +1,371 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+/* ==== global setting ==== */
+
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover,
+a:visited,
+a:active {
+  color: #000;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+
+/* ==== utility ==== */
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.bor-b {
+  border-bottom: 1px solid #000 !important;
+}
+
+
+/* ==== project setting ==== */
+
+
+/* header */
+
+header {
+  text-align: center;
+  padding: 2.5rem 0;
+  text-transform: uppercase;
+}
+
+header img {
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+
+/* search bar */
+
+.search-bar {
+  background-color: #333333;
+  padding: 1rem 0;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+
+.search-bar .search {
+  border: 1px solid #ccc;
+  display: inline-block;
+  border-radius: 100px;
+  padding: 0 1rem;
+}
+
+.search-bar input {
+  background-color: #333333;
+  color: #fff;
+  padding: .5rem 0.25rem;
+  outline: none;
+  border: none;
+}
+
+.search-bar input::placeholder {
+  color: #ccc;
+  padding: 0.25rem -0.2rem;
+}
+
+.search-bar button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar i {
+  color: #ccc;
+}
+
+
+/* content */
+
+.content {
+  display: flex;
+}
+
+.left-place {
+  width: 20%;
+}
+
+.mid-place {
+  width: 60%;
+  padding: 0 2rem;
+}
+
+.right-place {
+  width: 20%;
+}
+
+@media screen and (max-width: 768px) {
+  .mid-place {
+    width: 100%;
+  }
+  .left-place {
+    width: 0;
+    display: none;
+  }
+  .right-place {
+    width: 0;
+    display: none;
+  }
+}
+
+
+/* left place */
+
+.left-place .profile {
+  border: 1px solid #ccc;
+}
+
+.left-place .info {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 2rem 0;
+}
+
+.left-place .info h2 {
+  font-size: 1.5rem;
+}
+
+.left-place .info h3 {
+  font-size: 1rem;
+}
+
+.left-place .info p {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.left-place .info .avatar {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.left-place .icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.left-place .icons li {
+  cursor: pointer;
+}
+
+.left-place .icons li:hover {
+  color: #666;
+}
+
+
+/* middle place */
+
+.mid-place .article-container {
+  border: 1px solid #ccc;
+  padding: 1.5rem;
+}
+
+.mid-place .article h2 {
+  margin-bottom: 2rem;
+}
+
+.mid-place .article h3 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #000;
+}
+
+.mid-place .article .txt {
+  margin-bottom: 1.5rem;
+}
+
+.mid-place .footer {
+  padding: 2rem 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #ccc;
+}
+
+.mid-place .share-icon {
+  display: flex;
+  align-items: center;
+}
+
+.mid-place .fb-like,
+.mid-place .fb-share {
+  background-color: #1877f2;
+  color: #fff;
+  border-radius: 3px;
+  margin: 0 3px;
+  padding: 3px 8px;
+}
+
+.mid-place .fb-like i {
+  margin-right: 5px;
+}
+
+.mid-place .comments,
+.mid-place .share {
+  background-color: transparent;
+  color: #666;
+  font-size: 1rem;
+}
+
+.mid-place .comments i,
+.mid-place .share i {
+  margin-right: 5px;
+}
+
+
+/* newer older */
+
+.newer-older {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0;
+}
+
+.newer-older .newer,
+.newer-older .older {
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+
+/* comment place */
+
+.comment-place .share-icons {
+  display: flex;
+}
+
+.comment-place .share-icons i {
+  margin-right: 5px;
+}
+
+.comment-place .share-icons .recommend {
+  background-color: transparent;
+  color: #666;
+  margin-right: 10px;
+}
+
+.comment-place .share-icons .recommend i {
+  color: #F06172;
+}
+
+.comment-place .share-icons .tweet {
+  background-color: rgb(0, 172, 237);
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.comment-place .share-icons .facebook {
+  background-color: #3B5998;
+  border-radius: 3px;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.comment-place .comments {
+  display: flex;
+  align-items: flex-start;
+}
+
+.comment-place .comments .discussion {
+  width: 100%;
+}
+
+.comment-place .comments .avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-place .comments input {
+  width: 100%;
+  height: 50px;
+}
+
+.comment-place .comments .share-icons i {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* right place */
+
+.right-place li {
+  list-style: inside square;
+}
+
+.right-place li:hover a {
+  color: #f00;
+}
+
+
+/* footer */
+
+footer {
+  color: #ccc;
+  text-align: center;
+  padding: 3rem 0;
+  border-top: 1px solid #ccc;
+}
