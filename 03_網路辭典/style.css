@@ -1,0 +1,436 @@
+/* font */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+/* ==== global setting ==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+i.mr-5 {
+  margin-right: 5px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+
+/* ==== utility ==== */
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.mb-8 {
+  margin-bottom: 8px !important;
+}
+
+.mb-16 {
+  margin-bottom: 16px !important;
+}
+
+.mb-32 {
+  margin-bottom: 32px !important;
+}
+
+.bor-b {
+  border-bottom: 1px solid #000 !important;
+}
+
+
+/* ==== project setting ==== */
+
+body {
+  padding-top: 55.2px;
+  color: #1D2A57;
+}
+
+
+/* nav-bar */
+
+nav {
+  width: 100%;
+  background-color: #1D2A57;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.nav-left,
+.nav-right,
+.nav-left ul {
+  display: flex;
+}
+
+nav li,
+nav button {
+  padding: 1rem 1rem;
+  cursor: pointer;
+}
+
+nav button {
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  background-color: #1D2A57;
+  color: #fff;
+  border-right: 1px solid #666;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-left ul {
+    display: none;
+  }
+  .nav-right span {
+    display: none;
+  }
+}
+
+
+/* header */
+
+.header {
+  margin-bottom: 8rem;
+  background-color: #232856;
+  color: #fff;
+  border-top: 1px solid #666;
+}
+
+.header .container {
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .left h2 {
+  border-bottom: 2px solid #fa0;
+}
+
+.header .right {
+  width: 70%;
+}
+
+.header .right .search-bar {
+  display: flex;
+}
+
+.header .right .search {
+  width: 100%;
+  display: flex;
+}
+
+.header .right input {
+  padding: 0.5rem 1rem;
+  border-radius: 100px 0 0 100px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.header .right .ellipsis {
+  font-size: 1rem;
+  border-radius: 0 100px 100px 0;
+  background-color: #fff;
+  padding: .5rem 1rem;
+}
+
+.header .right .search-btn {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: #fa0;
+  border-radius: 50%;
+}
+
+.header .right ul {
+  display: flex;
+}
+
+.header .right li {
+  background-color: #1C4F98;
+  padding: 0.25rem 0.5rem;
+  border-radius: 100px;
+}
+
+.header .right li+li {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .header .right {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .header .container {
+    height: auto;
+    flex-direction: column;
+  }
+  .header .left {
+    margin-bottom: 1.2rem;
+  }
+  .header .right {
+    width: 100%;
+  }
+  .header .right ul {
+    display: none;
+  }
+}
+
+
+/* content */
+
+.content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content .main {
+  flex-grow: 1;
+}
+
+.main .dir-collection {
+  background-color: #DDFAFF;
+  padding: 2rem 2rem 6rem;
+  display: flex;
+}
+
+.dir-collection .left,
+.dir-collection .right {
+  width: 50%;
+  margin: 0 0.5rem;
+}
+
+.dir-collection .item {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.dir-collection .block {
+  width: 60px;
+}
+
+.dir-collection .txt {
+  width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.dir-collection .txt li {
+  padding: 0.5rem 0;
+}
+
+.dir-collection .txt li i {
+  color: #f00;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .main .dir-collection {
+    flex-direction: column;
+  }
+  .dir-collection .left,
+  .dir-collection .right {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+
+/* other-links */
+
+.other-links {
+  margin: -3rem 2rem 2rem;
+}
+
+.other-links .item {
+  margin-bottom: 1.5rem;
+  display: flex;
+  box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, .2);
+}
+
+.other-links .item .pic {
+  width: 40%;
+}
+
+.other-links .item .word {
+  padding: 4rem 0;
+  background-color: #fa0;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.other-links .word .icons {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.other-links .word .icons i {
+  padding: .5rem .5rem;
+}
+
+.other-links .item .txt {
+  background-color: #fff;
+  width: 60%;
+  padding: 1rem;
+}
+
+.other-links .item .txt button {
+  background-color: #1D2A57;
+  color: #fff;
+  display: block;
+  margin: 1rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+.other-links .item .txt button:hover {
+  filter: brightness(1.5);
+}
+
+@media screen and (max-width: 768px) {
+  .other-links .item {
+    flex-direction: column;
+  }
+  .other-links .item .pic,
+  .other-links .item .txt {
+    width: 100%;
+  }
+}
+
+.content .quiz {
+  width: 350px;
+  background-color: #FEC400;
+  padding: 1.3rem;
+  margin-left: 2rem;
+}
+
+.content .quiz h3 {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+}
+
+.content .quiz button {
+  padding: 0.5rem 1rem;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .content .quiz {
+    display: none;
+  }
+}
+
+
+/* footer */
+
+footer {
+  background-color: #1D2A57;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+footer li a {
+  color: #fff;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .left {
+  display: flex;
+}
+
+footer .left ul {
+  margin-right: 2rem;
+}
+
+footer .left ul li:first-child {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+footer .left ul li {
+  margin-bottom: 5px;
+}
+
+footer .left ul a:hover {
+  text-decoration: underline;
+}
+
+footer .right .icons {
+  font-size: 0;
+}
+
+footer .right .icons i {
+  margin: 0 1rem;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  width: 30px;
+  height: 30px;
+}
+
+footer .right h2 {
+  border-bottom: 2px solid #fa0;
+}
+
+@media screen and (max-width: 576px) {
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .left {
+    margin-bottom: 40px;
+  }
+}
