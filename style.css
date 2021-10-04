@@ -139,12 +139,13 @@ footer {
   margin-bottom: 10rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .links .item {
   display: block;
-  width: 20%;
-  margin: 1rem;
+  width: 23%;
+  margin-bottom: 3rem;
   text-align: center;
   background-color: #fff;
   border-radius: 10px;
@@ -152,10 +153,12 @@ footer {
 }
 
 .links .pic {
+  width: 100%;
   overflow: hidden;
 }
 
 .links .item img {
+  object-fit: cover;
   transform: scale(1);
   transition: transform 0.5s;
 }
@@ -170,14 +173,14 @@ footer {
   font-size: 1.2rem;
 }
 
-@media screen and (max-width: 756px) {
-  .links .item {
-    width: 80%;
-  }
-}
-
 @media screen and (max-width: 992px) {
   .links .item {
     width: 40%;
+  }
+}
+
+@media screen and (max-width: 756px) {
+  .links .item {
+    width: 80%;
   }
 }
