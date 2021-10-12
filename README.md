@@ -1,7 +1,7 @@
 # 15個切版練習
-主要做CSS部分
+[github pages](https://link1515.github.io/15-CSS-practice/)
 
-## 目的: 訓練切版速度
+## 項目
 - 01 部落格
 - 02 禮物購物網站
 - 03 網路辭典
